@@ -15,6 +15,7 @@ game.resources = [
     {name: "load-screen", type: "image", src: "data/img/loadpic.png"},
     {name: "new-screen", type: "image", src: "data/img/newpic.png"},
     {name: "cold", type: "image", src: "data/img/cold.jpg"},
+    {name: "space 2", type: "image", src: "data/img/space 2.jpg"},
     /* Atlases 
      * @example
      * {name: "example_tps", type: "tps", src: "data/img/example_tps.json"},
@@ -26,7 +27,8 @@ game.resources = [
      * {name: "example01", type: "tmx", src: "data/map/example01.json"},
      */
     {name: "level01", type: "tmx", src: "data/map/newmap.tmx"},
-    {name: "lvl2", type: "tmx", src: "data/map/lvl2.tmx"}
+    {name: "lvl2", type: "tmx", src: "data/map/lvl2.tmx"},
+    {name: "lvl3", type: "tmx", src: "data/map/lvl3.tmx"}
     
 
 
