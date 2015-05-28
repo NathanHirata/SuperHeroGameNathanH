@@ -8,10 +8,8 @@ var game = {
     data: {
 // score
         score: 0,
-        enemyBaseHealth: 2,
-        playerBaseHealth: 2,
         enemyCreepHealth: 3,
-        playerHealth: 3,
+        playerHealth: 1,
         enemyCreepAttack: 1,
         playerAttack: 1,
         playerAttackTimer: 1000,
@@ -21,19 +19,6 @@ var game = {
         gameTimerManager: "",
         heroDeathManager: "",
         player: "",
-        exp: 0,
-        gold: 0,
-        ability1: 0,
-        ability2: 0,
-        ability3: 0,
-        skill1: 0,
-        skill2: 0,
-        skill3: 0,
-        exp1: 0,
-        exp2: 0,
-        exp3: 0,
-        exp4: 0,
-        win: "",
         pausePos: "",
         buyScreen: "",
         buytext: ""
@@ -69,19 +54,13 @@ var game = {
     "loaded": function() {
         me.pool.register("levelTrigger", game.LevelTrigger, true);
         me.pool.register("player", game.PlayerEntity, true);
-        me.pool.register("enemyBase", game.EnemyBaseEntity);
-        me.pool.register("playerBase", game.PlayerBaseEntity);
         me.pool.register("EnemyCreep", game.EnemyCreep);
         me.pool.register("GameTimerManager", game.GameTimerManager);
         me.pool.register("HeroDeathManager", game.HeroDeathManager);
         me.pool.register("ExperienceManager", game.ExperienceManager);
-        me.pool.register("SpendGold", game.SpendGold);
 
         me.state.set(me.state.MENU, new game.TitleScreen());
         me.state.set(me.state.PLAY, new game.PlayScreen());
-        me.state.set(me.state.SPENDEXP, new game.SpendExp());
-        me.state.set(me.state.LOAD, new game.LoadProfile());
-        me.state.set(me.state.NEW, new game.NewProfile());
         // Start the game.
         me.state.change(me.state.MENU);
     }

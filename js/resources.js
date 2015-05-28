@@ -7,15 +7,12 @@ game.resources = [
     {name: "sky", type: "image", src: "data/img/sky.jpg"},
     {name: "background-tiles", type: "image", src: "data/img/background-tiles.png"},
     {name: "player", type: "image", src: "data/img/wizard.png"},
-    {name: "tower", type: "image", src: "data/img/tower_round.svg.png"},
     {name: "creep1", type: "image", src: "data/img/skeletonDagger.png"},
     {name: "main page", type: "image", src: "data/img/main page.png"},
-    {name: "exp-screen", type: "image", src: "data/img/loadpic.png"},
-    {name: "gold-screen", type: "image", src: "data/img/spend.png"},
-    {name: "load-screen", type: "image", src: "data/img/loadpic.png"},
-    {name: "new-screen", type: "image", src: "data/img/newpic.png"},
     {name: "cold", type: "image", src: "data/img/cold.jpg"},
     {name: "space 2", type: "image", src: "data/img/space 2.jpg"},
+    {name: "turtkalen", type: "image", src: "data/img/turtkalen.png"},
+    {name: "bruh", type: "image", src: "data/img/bruh.jpeg"},
     /* Atlases 
      * @example
      * {name: "example_tps", type: "tps", src: "data/img/example_tps.json"},
@@ -28,7 +25,9 @@ game.resources = [
      */
     {name: "level01", type: "tmx", src: "data/map/newmap.tmx"},
     {name: "lvl2", type: "tmx", src: "data/map/lvl2.tmx"},
-    {name: "lvl3", type: "tmx", src: "data/map/lvl3.tmx"}
+    {name: "lvl3", type: "tmx", src: "data/map/lvl3.tmx"},
+    {name: "lvl2.2", type: "tmx", src: "data/map/lvl2.2.tmx"},
+    {name: "lvl2.5", type: "tmx", src: "data/map/lvl2.5.tmx"}
     
 
 
